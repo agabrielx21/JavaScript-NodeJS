@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Vec</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <main>
+            <div class="navbar">
+                <%-include('navbar.ejs')%>;
+            </div>
+        <button class="btn" onclick="mode()">Dark Mode / Light Mode</button>
+        <input id="inpU" placeholder="User">
+        <input id="inp" placeholder="Wallet">    
+        <input id ="inpN" placeholder="n values">
+        <input id ="inpE" placeholder="Expected Winner">
+       <button onclick="add()">Add User</button>
+       <button onclick="afisare()">Show Users</button>
+       <button onclick="hide()">Hide Users</button>
+       <button onclick="sort()">Show Sorted Users</button>
+       <button onclick="deleteW()">Delete Last User </button>
+        </main>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button><br>
+        <input type="checkbox" id="myCheck" onclick="golireStorage()">Golire Storage
+        <div id="l1">Locul 1 : </div><br>
+        <div id="l2">Locul 2 : </div>
+        <div id="divP"></div>
+        <button onclick="showOrg()">Organizers </button>
+        <input id ="filtru" placeholder="Filtru">
+        <button onclick="filter()">Cautare user </button>
+        
+       <script src="script.js"></script>
+       <script src="ejs.js"></script>
+    </body>
+
+</html>
